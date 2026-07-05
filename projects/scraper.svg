@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06101a"/><stop offset="1" stop-color="#04070c"/></linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a9ec4"/><stop offset="1" stop-color="#5ba3c9"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g stroke="#4a9ec4" stroke-opacity="0.07"><path d="M0 100H800M0 200H800M0 300H800M0 400H800"/><path d="M100 0V500M200 0V500M300 0V500M400 0V500M500 0V500M600 0V500M700 0V500"/></g>
+  <circle cx="400" cy="250" r="34" fill="#0b0e16" stroke="url(#ac)" stroke-width="1.5"/>
+  <text x="400" y="256" font-family="monospace" font-size="13" fill="#4a9ec4" text-anchor="middle">CRAWL</text>
+  <g stroke="url(#ac)" stroke-width="1.5" stroke-opacity="0.7">
+    <path d="M400 216V120M400 284v96M366 250H150M434 250h216M376 226l-120-80M424 226l120-80M376 274l-120 80M424 274l120 80"/>
+  </g>
+  <g fill="#0b0e16" stroke="url(#ac)" stroke-width="1.5">
+    <rect x="110" y="100" width="80" height="56" rx="8"/><rect x="510" y="100" width="80" height="56" rx="8"/>
+    <rect x="110" y="330" width="80" height="56" rx="8"/><rect x="510" y="330" width="80" height="56" rx="8"/>
+    <rect x="360" y="70" width="80" height="52" rx="8"/><rect x="360" y="378" width="80" height="52" rx="8"/>
+  </g>
+  <g fill="#5ba3c9" fill-opacity="0.5"><rect x="122" y="112" width="34" height="24" rx="3"/><rect x="522" y="112" width="34" height="24" rx="3"/><rect x="122" y="342" width="34" height="24" rx="3"/><rect x="522" y="342" width="34" height="24" rx="3"/><rect x="372" y="82" width="34" height="24" rx="3"/><rect x="372" y="390" width="34" height="24" rx="3"/></g>
+  <text x="620" y="250" font-family="monospace" font-size="13" fill="#5ba3c9">≈ similar</text>
+  <text x="620" y="272" font-family="monospace" font-size="13" fill="#5ba3c9">= match</text>
+  <text x="110" y="470" font-family="monospace" font-size="13" fill="#ffffff" fill-opacity="0.4">PLAYWRIGHT · PATCHRIGHT · IMAGE SIMILARITY</text>
+</svg>

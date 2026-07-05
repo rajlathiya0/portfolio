@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06101a"/><stop offset="1" stop-color="#04070c"/></linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a9ec4"/><stop offset="1" stop-color="#5ba3c9"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g stroke="#4a9ec4" stroke-opacity="0.06"><path d="M0 100H800M0 200H800M0 300H800M0 400H800"/><path d="M100 0V500M200 0V500M300 0V500M400 0V500M500 0V500M600 0V500M700 0V500"/></g>
+  <rect x="70" y="70" width="660" height="360" rx="12" fill="#0b0e16" stroke="url(#ac)" stroke-width="1.5"/>
+  <rect x="70" y="70" width="660" height="46" rx="12" fill="#4a9ec4" fill-opacity="0.05"/>
+  <text x="100" y="100" font-family="monospace" font-size="16" fill="#5ba3c9">OREBI</text>
+  <circle cx="660" cy="93" r="12" fill="none" stroke="#5ba3c9"/>
+  <path d="M654 89h12l-2 8h-8z" fill="#5ba3c9" fill-opacity="0.6"/>
+  <g>
+    <rect x="100" y="150" width="140" height="240" rx="10" fill="#0b0e16" stroke="#5ba3c9" stroke-opacity="0.25"/>
+    <rect x="270" y="150" width="140" height="240" rx="10" fill="#0b0e16" stroke="#5ba3c9" stroke-opacity="0.25"/>
+    <rect x="440" y="150" width="140" height="240" rx="10" fill="#0b0e16" stroke="#4a9ec4" stroke-opacity="0.5"/>
+  </g>
+  <g fill="url(#ac)" fill-opacity="0.3"><rect x="118" y="168" width="104" height="90" rx="6"/><rect x="288" y="168" width="104" height="90" rx="6"/><rect x="458" y="168" width="104" height="90" rx="6"/></g>
+  <g font-family="monospace" font-size="12" fill="#ffffff" fill-opacity="0.6"><text x="118" y="290">Product</text><text x="288" y="290">Product</text><text x="458" y="290">Product</text></g>
+  <g font-family="monospace" font-size="13" fill="#5ba3c9"><text x="118" y="315">$29</text><text x="288" y="315">$49</text><text x="458" y="315">$39</text></g>
+  <g><rect x="118" y="335" width="104" height="30" rx="6" fill="#4a9ec4" fill-opacity="0.4"/><rect x="288" y="335" width="104" height="30" rx="6" fill="#4a9ec4" fill-opacity="0.4"/><rect x="458" y="335" width="104" height="30" rx="6" fill="#5ba3c9" fill-opacity="0.6"/></g>
+  <text x="480" y="355" font-family="monospace" font-size="11" fill="#04070c">ADD TO CART</text>
+  <rect x="610" y="150" width="100" height="240" rx="10" fill="#5ba3c9" fill-opacity="0.05" stroke="#5ba3c9" stroke-opacity="0.3"/>
+  <text x="625" y="180" font-family="monospace" font-size="11" fill="#5ba3c9">CART (3)</text>
+  <text x="70" y="465" font-family="monospace" font-size="13" fill="#ffffff" fill-opacity="0.4">REACT · CART · CHECKOUT · PAYMENTS</text>
+</svg>
