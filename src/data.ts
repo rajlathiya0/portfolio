@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
   {
     company: 'Mirraw',
     role: 'Data Analyst',
-    period: '22 Apr 2026 — Present',
+    period: 'April 2026 — Present',
     location: 'Mumbai, India',
     current: true,
     points: [
@@ -49,27 +49,27 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    company: 'The Hobby Tribe',
-    role: 'Full Stack Developer Intern',
-    period: '25 Jul 2025 — 25 Aug 2026',
-    location: 'Mumbai, India',
-    points: [
-      'Developed dynamic, user-friendly pages with EJS, improving overall UX and frontend responsiveness.',
-      'Built interactive engagement features such as a Stress-O-Meter and Streaks Plan to boost retention.',
-      'Designed an Explore Page where users could post, like, comment, and share hobby content — fostering a community-driven platform.',
-      'Worked across frontend and backend layers for seamless integration and smooth functionality.',
-    ],
-  },
-  {
     company: 'Bot2Do Technologies',
     role: 'Backend Developer Intern',
-    period: '17 Jun 2024 — 17 Sep 2024',
+    period: 'June 2024 — September 2024',
     location: 'Mumbai, India',
     points: [
       'Contributed to backend architecture and features on the ScaleSecure project using Node.js.',
       'Designed and maintained scalable RESTful APIs, adding new endpoints for evolving business needs.',
       'Optimized database queries and backend logic to reduce latency and ensure efficient data handling.',
       'Debugged, tested, and improved existing services for reliability and smooth frontend integration.',
+    ],
+  },
+  {
+    company: 'The Hobby Tribe',
+    role: 'Full Stack Developer Intern',
+    period: 'July 2023 — August 2023',
+    location: 'Mumbai, India',
+    points: [
+      'Developed dynamic, user-friendly pages with EJS, improving overall UX and frontend responsiveness.',
+      'Built interactive engagement features such as a Stress-O-Meter and Streaks Plan to boost retention.',
+      'Designed an Explore Page where users could post, like, comment, and share hobby content — fostering a community-driven platform.',
+      'Worked across frontend and backend layers for seamless integration and smooth functionality.',
     ],
   },
 ]
