@@ -13,9 +13,9 @@ export const profile = {
   phone: '+91 90829 93748',
   github: 'https://github.com/rajlathiya0',
   linkedin: 'https://www.linkedin.com/in/raj-lathiya',
-  photo: '/raj.jpeg',
-  avatar: '/profile.jpg',
-  resume: '/Raj_Lathiya_Resume.pdf',
+  photo: './raj.jpeg',
+  avatar: './profile.jpg',
+  resume: './Raj_Lathiya_Resume.pdf',
   stats: [
     { value: '9.65', label: 'CGPA / 10' },
     { value: '11+', label: 'Projects Built' },
@@ -98,7 +98,7 @@ export const projects: Project[] = [
       'Generates bank-ready output files for direct upload',
     ],
     tech: ['Flask', 'PyMuPDF', 'Gemini 2.5', 'Python'],
-    image: '/projects/invoice.svg',
+    image: './projects/invoice.svg',
     accent: '#5ba3c9',
   },
   {
@@ -113,7 +113,7 @@ export const projects: Project[] = [
       'Structured storage of matched product information',
     ],
     tech: ['Playwright', 'Patchright', 'Python', 'Scraping'],
-    image: '/projects/scraper.svg',
+    image: './projects/scraper.svg',
     accent: '#4a9ec4',
   },
   {
@@ -128,7 +128,7 @@ export const projects: Project[] = [
       'OpenStreetMap incident map + real-time threat alerts',
     ],
     tech: ['Flask', 'YOLOv5', 'OpenCV', 'Python'],
-    image: '/projects/violence.jpg',
+    image: './projects/violence.jpg',
     accent: '#8fb9d1',
   },
   {
@@ -143,7 +143,7 @@ export const projects: Project[] = [
       'Context alerts (e.g. lone woman at night) for public spaces',
     ],
     tech: ['OpenCV', 'TensorFlow', 'Keras', 'Conv2D'],
-    image: '/projects/safety.jpg',
+    image: './projects/safety.jpg',
     accent: '#5ba3c9',
   },
   {
@@ -158,7 +158,7 @@ export const projects: Project[] = [
       'Smart filtering + CSV/PDF exportable reports',
     ],
     tech: ['React', 'Express', 'MongoDB', 'Material UI'],
-    image: '/projects/dashboard.jpg',
+    image: './projects/dashboard.jpg',
     accent: '#4a9ec4',
   },
   {
@@ -173,7 +173,7 @@ export const projects: Project[] = [
       'Streamlit interface for ticker input & trend lines',
     ],
     tech: ['LSTM', 'Streamlit', 'Python', 'Keras'],
-    image: '/projects/stock.jpg',
+    image: './projects/stock.jpg',
     accent: '#5ba3c9',
   },
   {
@@ -188,7 +188,7 @@ export const projects: Project[] = [
       'Product listing, search & filter mechanisms',
     ],
     tech: ['React', 'Redux', 'Tailwind', 'JavaScript'],
-    image: '/projects/orebi.svg',
+    image: './projects/orebi.svg',
     accent: '#4a9ec4',
   },
   {
@@ -203,7 +203,7 @@ export const projects: Project[] = [
       'Java GUI with MySQL/SQLite persistence',
     ],
     tech: ['Java', 'Swing', 'MySQL', 'SQLite'],
-    image: '/projects/bug.svg',
+    image: './projects/bug.svg',
     accent: '#8fb9d1',
   },
 ]
