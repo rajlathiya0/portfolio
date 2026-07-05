@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --accent: #5ba3c9;
+  --accent-light: #a0b4c8;
+  --accent-bright: #4fc3f7;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #e8eef2;
+  font-family: 'Poppins', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hide native cursor on fine-pointer devices */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* ===== Custom cursor ===== */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--accent-bright);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100000;
+  will-change: transform;
+  box-shadow: 0 0 10px 1px rgba(79, 195, 247, 0.9);
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(91, 163, 201, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  will-change: transform;
+  transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.cursor-ring::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 1px dashed rgba(160, 180, 200, 0.3);
+  animation: spin 6s linear infinite;
+}
+
+.cursor-ring.hovering {
+  width: 62px;
+  height: 62px;
+  border-color: rgba(79, 195, 247, 0.9);
+  background: rgba(91, 163, 201, 0.08);
+}
+
+.cursor-ring.clicking {
+  width: 26px;
+  height: 26px;
+  background: rgba(91, 163, 201, 0.2);
+}
+
+.cursor-label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 100000;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  background: var(--accent);
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, calc(-50% - 44px));
+  transition: opacity 0.18s ease;
+}
+
+.cursor-label.show {
+  opacity: 1;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Utilities ===== */
+.section-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(91, 163, 201, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91, 163, 201, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.dots-bg {
+  background-image: radial-gradient(rgba(91, 163, 201, 0.12) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.text-glow {
+  text-shadow: 0 0 28px rgba(91, 163, 201, 0.45);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #cfe4f2, #5ba3c9, #4fc3f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* two-tone heading accent word — italic gradient like the reference */
+.heading-italic {
+  font-style: italic;
+  background: linear-gradient(90deg, #dfeaf2, #7ec8e3, #4a9ec4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 0 26px rgba(79, 195, 247, 0.28));
+}
+
+.gradient-bar {
+  background: linear-gradient(90deg, #326d8c 0%, #5ba3c9 100%);
+}
+
+.panel-gradient {
+  background: linear-gradient(#2a4a5a, #1a3040, #0d1b2a);
+}
+
+.glass {
+  background: rgba(13, 27, 42, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-glow {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card-glow:hover {
+  border-color: rgba(91, 163, 201, 0.45);
+  box-shadow: 0 0 44px -14px rgba(91, 163, 201, 0.5);
+}
+
+::selection {
+  background: rgba(91, 163, 201, 0.35);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#5ba3c9, #326d8c);
+  border-radius: 10px;
+}
