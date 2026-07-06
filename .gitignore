@@ -4,3 +4,19 @@ docx_extract
 *.local
 .DS_Store
 .vercel
+
+# Build outputs - exclude generated files
+/index.html
+/assets/
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
